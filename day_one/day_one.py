@@ -1,4 +1,4 @@
-def parse_this_shit(line):
+def parsing_numbers(line):
   dict = {'one': '1', 'two': '2', 'three': '3', 'four': '4', 'five': '5', 'six': '6', 'seven': '7', 'eight': '8', 'nine': '9'}
 
   first = ""
@@ -43,7 +43,7 @@ def main():
   ret = 0
   with open('input.txt', 'r') as f:
     for line in f:
-      ret += int(parse_this_shit(line))
+      ret += int(parsing_numbers(line))
 
   print(ret)
 
