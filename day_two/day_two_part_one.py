@@ -1,8 +1,4 @@
-# given 12 red, 13 gree, 14 blue
-
-
 def gambling(line: str) -> bool:
-
 
   # parse for blue red or green
 
@@ -21,8 +17,6 @@ def gambling(line: str) -> bool:
       count, color = curr.split(" ")
       count = int(count)
 
-      print(count, " ", color)
-
       if color[0] == 'r':
         red += count
 
@@ -32,12 +26,11 @@ def gambling(line: str) -> bool:
       if color[0] == 'b':
         blue += count
 
+  # given red max is 12, green max is 13, blue max is 14
       if red > 12 or green > 13 or blue > 14:
         return False
 
   return True
-
-
 
 def main():
   ret = 0
